@@ -10,8 +10,9 @@ const { title, location, date } = Astro.props;
 		></span>
 	</div>
 	<div class="experience__data bd-grid px-5">
-		<h3 class="font-semibold mb-1">{title} [{date}]</h3>
-		<span class="font-light text-sm">{location}</span>
+		<h3 class="font-semibold mb-1">{title}</h3>
+		<p class="font-normal text-sm mb-1">{location}</p>
+		<p class="font-light text-sm italic text-neutral-400">{date}</p>
 		<slot />
 	</div>
 </div>

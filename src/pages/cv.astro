@@ -48,7 +48,10 @@ const allEdu = await Astro.glob("../content/cv/education/*.md");
 		{
 			allAchv.map((achv) => (
 				<li>
-					{achv.title} [{achv.date}]
+					{achv.title}
+					<p class="font-light text-sm italic text-neutral-400">
+						{achv.date}
+					</p>
 				</li>
 			))
 		}
