@@ -1,40 +1,33 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import TimeLineElement from "../components/TimeLine.astro";
-import { allSkills, allAchv } from "./skillsAchvs";
-
-const allExp = await Astro.glob("../content/cv/experiences/*.md");
-const allEdu = await Astro.glob("../content/cv/education/*.md");
+import { allExp, allEdu, allSkills, allAchv } from "./cvDetails";
 ---
 
 <BaseLayout title="CV - Farhanah Izzati" sideBarActiveItemID="cv">
 	<div class="mb-5 text-3xl w-full font-bold">Experience</div>
 	<div class="time-line-container grid gap-4 mb-10">
 		{
-			allExp
-				.reverse()
-				.map((exp) => (
-					<TimeLineElement
-						title={exp.frontmatter.title}
-						location={exp.frontmatter.location}
-						date={exp.frontmatter.date}
-					/>
-				))
+			allExp.map((exp) => (
+				<TimeLineElement
+					title={exp.title}
+					location={exp.location}
+					date={exp.date}
+				/>
+			))
 		}
 	</div>
 
 	<div class="mb-5 text-3xl w-full font-bold">Education</div>
 	<div class="time-line-container grid gap-4 mb-10">
 		{
-			allEdu
-				.reverse()
-				.map((edu) => (
-					<TimeLineElement
-						title={edu.frontmatter.title}
-						location={edu.frontmatter.location}
-						date={edu.frontmatter.date}
-					/>
-				))
+			allEdu.map((edu) => (
+				<TimeLineElement
+					title={edu.title}
+					location={edu.location}
+					date={edu.date}
+				/>
+			))
 		}
 	</div>
 

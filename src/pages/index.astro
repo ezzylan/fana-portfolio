@@ -2,14 +2,12 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 import HorizontalCard from "../components/HorizontalCard.astro";
 import AboutMe from "../components/AboutMe.astro";
-// import { getCollection } from "astro:content";
+import { getCollection } from "astro:content";
 
-// const posts = (await getCollection("blog")).sort(
-// 	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
-// );
-// const last_posts = posts.slice(0, 3);
-
-// const allProjects = await Astro.glob("../content/projects/*.md");
+const projects = (await getCollection("portfolio")).sort(
+	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+);
+const latestProjects = projects.slice(0, 3);
 ---
 
 <BaseLayout sideBarActiveItemID="home">
@@ -54,60 +52,19 @@ import AboutMe from "../components/AboutMe.astro";
 		<p>There are no projects to show at the moment. Check back later!</p>
 	</div>
 
-	<!-- {
-		allProjects.reverse().map((project) => (
+	<!-- <div class="divider my-0"></div>
+	{
+		latestProjects.map((project) => (
 			<>
 				<HorizontalCard
-					title={project.frontmatter.title}
-					img={project.frontmatter.img}
-					desc={project.frontmatter.desc}
-					url={project.url}
+					title={project.data.title}
+					img={project.data.heroImage}
+					desc={project.data.description}
+					url={"/portfolio/" + project.slug}
+					target="_self"
 				/>
 				<div class="divider my-0" />
 			</>
 		))
 	} -->
-
-	<!-- <HorizontalCard
-		title="Demo Project 1"
-		img="/post_img.webp"
-		desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-		url="#"
-		badge="NEW"
-	/>
-	<div class="divider my-0"></div>
-	<HorizontalCard
-		title="Demo Project 2"
-		img="/post_img.webp"
-		desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-		url="#"
-	/>
-	<div class="divider my-0"></div>
-	<HorizontalCard
-		title="Demo Project 3"
-		img="/post_img.webp"
-		desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-		url="#"
-		badge="FOSS"
-	/> -->
-
-	<!-- <div>
-    <div class="text-3xl w-full font-bold mb-5 mt-10">Latest from blog</div>
-  </div>
-
-  {
-    last_posts.map((post) => (
-      <>
-        <HorizontalCard
-          title={post.data.title}
-          img={post.data.heroImage}
-          desc={post.data.description}
-          url={"/blog/" + post.slug}
-          target="_self"
-          badge={post.data.badge}
-        />
-        <div class="divider my-0" />
-      </>
-    ))
-  } -->
 </BaseLayout>

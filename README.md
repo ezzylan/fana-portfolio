@@ -40,7 +40,7 @@ To get started with this project, follow these simple installation steps:
     npm run dev
     ```
 
-    This command will launch the application locally. You should see output indicating that the development server is running. By default, the application should be accessible at `http://localhost:3000`.
+    This command will launch the application locally. You should see output indicating that the development server is running. By default, the application should be accessible at `http://localhost:4321`.
 
 That's it! You've successfully installed and set up the project. You can now begin working on or using the application as needed.
 
@@ -64,9 +64,9 @@ That's it! You've successfully installed and set up the project. You can now beg
 
 ## Roadmap
 
-- [ ] Edit layout for project posts
-- [ ] Edit README.md
+- [x] Edit layout for project posts
 - [ ] Connect CMS to project
+- [ ] Edit README.md
 
 ## Acknoledgements
 
