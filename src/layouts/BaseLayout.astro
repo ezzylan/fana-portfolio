@@ -15,10 +15,12 @@ const {
 } = Astro.props;
 ---
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" data-theme="dracula">
 	<head>
 		<BaseHead title={title} description={description} image={image} />
+		<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"
+		></script>
 	</head>
 
 	<body class="bg-base-100 drawer">
@@ -37,5 +39,16 @@ const {
 				<SideBar sideBarActiveItemID={sideBarActiveItemID} />
 			)
 		}
+		<script>
+			if (window.netlifyIdentity) {
+				window.netlifyIdentity.on("init", (user) => {
+					if (!user) {
+						window.netlifyIdentity.on("login", () => {
+							document.location.href = "/admin/";
+						});
+					}
+				});
+			}
+		</script>
 	</body>
 </html>
