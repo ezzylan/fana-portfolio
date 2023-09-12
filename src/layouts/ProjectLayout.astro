@@ -2,33 +2,30 @@
 import BaseLayout from "./BaseLayout.astro";
 import dayjs from "dayjs";
 import localizedFormat from "dayjs/plugin/localizedFormat";
-
-const { title, description, heroImage, pubDate } = Astro.props;
-dayjs.extend(localizedFormat);
-const displayDate = dayjs(pubDate).format("ll");
 import { Image } from "astro:assets";
+
+const { project } = Astro.props;
+dayjs.extend(localizedFormat);
+const displayDate = dayjs(project.data.pubDate).format("ll");
 ---
 
 <BaseLayout
-	title={`${title} - Farhanah Izzati`}
-	description={description}
-	image={heroImage}
+	title={`${project.data.title} - Farhanah Izzati`}
+	description={project.data.description}
+	image={project.data.heroImage}
 >
 	<main class="md:flex md:justify-center">
 		<article class="prose prose-lg max-w-[750px] prose-img:mx-auto">
 			{
-				heroImage && (
+				project.data.heroImage && (
 					<Image
-						width={750}
-						height={422}
-						format="webp"
-						src={heroImage}
-						alt={title}
+						src={project.data.heroImage}
+						alt={project.data.title}
 						class="w-full mb-6"
 					/>
 				)
 			}
-			<h1 class="title my-2 text-4xl font-bold">{title}</h1>
+			<h1 class="title my-2 text-4xl font-bold">{project.data.title}</h1>
 			<div class="divider my-2"></div>
 			<slot />
 		</article>

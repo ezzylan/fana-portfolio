@@ -8,17 +8,8 @@ export async function getStaticPaths({ paginate }) {
 	projects.sort(
 		(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
 	);
-	return paginate(projects, { pageSize: 3 });
+	return paginate(projects, { pageSize: 10 });
 }
-
-type Project = {
-	data: {
-		title: string;
-		heroImage: string;
-		description: string;
-	};
-	slug: string;
-};
 
 const { page } = Astro.props;
 ---
@@ -30,21 +21,15 @@ const { page } = Astro.props;
 		<p>There are no projects to show at the moment. Check back later!</p>
 	</div>
 
-	<!-- <div class="divider my-0"></div>
+	<div class="divider my-0"></div>
 	{
-		page.data.map((project: Project) => (
+		page.data.map((project: any) => (
 			<>
-				<HorizontalCard
-					title={project.data.title}
-					img={project.data.heroImage}
-					desc={project.data.description}
-					url={"/portfolio/" + project.slug}
-					target="_self"
-				/>
+				<HorizontalCard project={project} target="_self" />
 				<div class="divider my-0" />
 			</>
 		))
-	} -->
+	}
 
 	<div class="flex justify-between">
 		{
@@ -86,27 +71,4 @@ const { page } = Astro.props;
 			)
 		}
 	</div>
-
-	<!-- <HorizontalCard
-		title="Demo Project 1"
-		img="/post_img.webp"
-		desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-		url="#"
-		badge="NEW"
-	/>
-	<div class="divider my-0"></div>
-	<HorizontalCard
-		title="Demo Project 2"
-		img="/post_img.webp"
-		desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-		url="#"
-	/>
-	<div class="divider my-0"></div>
-	<HorizontalCard
-		title="Demo Project 3"
-		img="/post_img.webp"
-		desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-		url="#"
-		badge="FOSS"
-	/> -->
 </BaseLayout>
