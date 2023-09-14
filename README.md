@@ -24,7 +24,7 @@ To get started with this project, follow these simple installation steps:
 
 3. **Install Dependencies**
 
-    Use npm to install the project's dependencies. Run the following command:
+    Use **npm** to install the project's dependencies. Run the following command:
 
     ```bash
     npm install
@@ -47,8 +47,9 @@ That's it! You've successfully installed and set up the project. You can now beg
 ## Tech Stack
 
 -   [Astro](https://astro.build)
--   [tailwindcss](https://tailwindcss.com/)
--   [DaisyUI](https://daisyui.com/)
+-   [Tailwind CSS](https://tailwindcss.com/)
+-   [daisyUI](https://daisyui.com/)
+-   [Decap CMS](https://decapcms.org/)
 
 ## Project Structure
 
@@ -56,17 +57,32 @@ That's it! You've successfully installed and set up the project. You can now beg
 
 ## Usage
 
-> Coming soon...
+### Add Projects (Portfolio)
 
-<!-- ### Add Projects
+> As of the time of this writing, Astro currently **does not support** empty collections. So, make sure to **not leave** the portfolio collection (or any other collections if added in the future) **empty**.
 
-1. -->
+There are two ways to add projects to the portfolio section:
 
-## Roadmap
+-   Manually
 
-- [x] Edit layout for project posts
-- [ ] Connect CMS to project
-- [ ] Edit README.md
+    1. Open `src/content/portfolio`.
+    2. Create a new Markdown file inside the folder. Make sure to include the following metadata in the **front matter**:
+        - title (Project Title)
+        - description (Project Description)
+        - heroImage (Project Image)
+        - pubDate (Publication Date)
+
+-   Via Decap CMS
+
+    1. Open `https://<site-name>.netlify.app/admin/`.
+    2. Click the following buttons according to their appearance order:
+        - `Login with Netlify Identity`
+        - `Continue with GitHub`
+        - `New Projects`
+    3. Fill in all the information in the empty spaces.
+    4. Click `Publish` then `Publish Now`.
+
+    > The steps above are done based on the assumption that the website has been **deployed to Netlify**. Refer to [this guide](https://decapcms.org/docs/add-to-your-site/) to configure Decap CMS to your preferred backend.
 
 ## Acknoledgements
 

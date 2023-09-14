@@ -4,7 +4,7 @@ import HorizontalCard from "../components/HorizontalCard.astro";
 import AboutMe from "../components/AboutMe.astro";
 import { getCollection } from "astro:content";
 import { Image } from "astro:assets";
-import profilePicture from "@assets/profile.jpg";
+import profilePicture from "../assets/profile.jpg";
 
 const projects = (await getCollection("portfolio")).sort(
 	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
@@ -49,12 +49,12 @@ const latestProjects = projects.slice(0, 3);
 	<AboutMe />
 
 	<div class="text-3xl w-full font-bold mb-5">My Latest Projects</div>
-	<div class="bg-base-200 border-l-4 border-secondary w-full p-4 min-w-full">
+	<!-- <div class="bg-base-200 border-l-4 border-secondary w-full p-4 min-w-full">
 		<p class="font-bold">Sorry!</p>
 		<p>There are no projects to show at the moment. Check back later!</p>
-	</div>
+	</div> -->
 
-	<!-- <div class="divider my-0"></div>
+	<div class="divider my-0"></div>
 	{
 		latestProjects.map((project) => (
 			<>
@@ -62,5 +62,5 @@ const latestProjects = projects.slice(0, 3);
 				<div class="divider my-0" />
 			</>
 		))
-	} -->
+	}
 </BaseLayout>
