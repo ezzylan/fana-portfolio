@@ -1,6 +1,11 @@
 // Update experiences here
 export const allExp = [
 	{
+		title: "Analyst Intern",
+		location: "KRU Studios, Cyberjaya, Selangor, Malaysia",
+		date: "Sep 2023 - Dec 2023",
+	},
+	{
 		title: "Special Education Substitute Teacher",
 		location: "Sekolah Kebangsaan Gangga, Beruas, Perak, Malaysia",
 		date: "May 2023 - June 2023",
