@@ -24,10 +24,10 @@ To get started with this project, follow these simple installation steps:
 
 3. **Install Dependencies**
 
-    Use **npm** to install the project's dependencies. Run the following command:
+    Use **pnpm** to install the project's dependencies. Run the following command:
 
     ```bash
-    npm install
+    pnpm install
     ```
 
     This command will download and install all the required packages specified in the `package.json` file.
@@ -37,7 +37,7 @@ To get started with this project, follow these simple installation steps:
     After the dependencies are successfully installed, start the development server by running:
 
     ```bash
-    npm run dev
+    pnpm run dev
     ```
 
     This command will launch the application locally. You should see output indicating that the development server is running. By default, the application should be accessible at `http://localhost:4321`.
