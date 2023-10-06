@@ -7,7 +7,7 @@ pubDate: 2023-09-15
 ---
 ## **Purpose:**
 
-This project is a comprehensive analysis and visualization of global maternal and reproductive health data spanning from 2015 to 2020. Its primary objective is to shed light on the critical challenges and issues surrounding maternal and reproductive health worldwide. By doing so, we aim to raise public awareness, foster community engagement, and promote support for initiatives that improve the well-being of women and newborns. 
+This individual project is a comprehensive analysis and visualization of global maternal and reproductive health data spanning from 2015 to 2020. Its primary objective is to shed light on the critical challenges and issues surrounding maternal and reproductive health worldwide. By doing so, we aim to raise public awareness, foster community engagement, and promote support for initiatives that improve the well-being of women and newborns. 
 
 ## **Hypotheses:**
 
@@ -26,8 +26,8 @@ The project provides a multifaceted analysis by visualizing key indicators of ma
 
 ## **Conclusion:**
 
-The project's findings have significant implications for global health and development. In line with the Sustainable Development Goals (SDG) Target 3, we found that lower-income countries indeed face higher maternal mortality ratios, adolescent birth rates, and stillbirth rates. These disparities underscore the urgent need for targeted interventions, healthcare infrastructure improvement, and equitable access to quality healthcare services in these regions.
+The project's findings have significant implications for global health and development. In line with the ***Sustainable Development Goals (SDG) Target 3***, we found that **lower-income countries indeed face higher maternal mortality ratios, adolescent birth rates, and stillbirth rates**. These disparities underscore the urgent need for targeted interventions, healthcare infrastructure improvement, and equitable access to quality healthcare services in these regions.
 
-Additionally, the project's analysis confirmed a positive correlation between early marriages and higher adolescent birth rates, as well as an association between higher stillbirth rates and adolescent births. These findings emphasize the importance of addressing sociocultural factors and promoting comprehensive sexual and reproductive health education to reduce adolescent pregnancies.
+Additionally, the project's analysis confirmed a **positive correlation between early marriages and higher adolescent birth rates**, as well as an **association between higher stillbirth rates and adolescent births**. These findings emphasize the importance of addressing sociocultural factors and promoting comprehensive sexual and reproductive health education to reduce adolescent pregnancies.
 
 This capstone project not only serves as an educational resource but also as a call to action. It highlights the importance of addressing maternal and reproductive health challenges and underscores the role each of us can play in promoting global health equity. Together, we can work towards a future where every woman and child enjoys the opportunity to lead a healthy and fulfilling life.
