@@ -7,7 +7,7 @@ pubDate: 2023-09-15
 ---
 ## **Purpose:**
 
-This individual project is a comprehensive analysis and visualization of global maternal and reproductive health data spanning from 2015 to 2020. Its primary objective is to shed light on the critical challenges and issues surrounding maternal and reproductive health worldwide. By doing so, we aim to raise public awareness, foster community engagement, and promote support for initiatives that improve the well-being of women and newborns. 
+This individual project is a comprehensive analysis and visualization of global maternal and reproductive health data spanning from 2015 to 2020. Its primary objective is to shed light on the critical challenges and issues surrounding maternal and reproductive health worldwide. By doing so, we aim to raise public awareness, foster community engagement, and promote support for initiatives that improve the well-being of women and newborns.
 
 ## **Hypotheses:**
 
