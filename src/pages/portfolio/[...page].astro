@@ -2,73 +2,76 @@
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import HorizontalCard from "../../components/HorizontalCard.astro";
 import { getCollection } from "astro:content";
+import type { Portfolio } from "../../config";
 
 export async function getStaticPaths({ paginate }) {
-	const projects = await getCollection("portfolio");
-	projects.sort(
-		(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
-	);
-	return paginate(projects, { pageSize: 10 });
+  const projects = await getCollection("portfolio");
+  projects.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+  return paginate(projects, { pageSize: 10 });
 }
 
 const { page } = Astro.props;
 ---
 
 <BaseLayout title="Portfolio - Farhanah Izzati" sideBarActiveItemID="portfolio">
-	<div class="text-3xl w-full font-bold mb-5">Portfolio</div>
-	<!-- <div class="bg-base-200 border-l-4 border-secondary w-full p-4 min-w-full">
+  <div class="text-3xl w-full font-bold mb-5">Portfolio</div>
+  <!-- <div class="bg-base-200 border-l-4 border-secondary w-full p-4 min-w-full">
 		<p class="font-bold">Sorry!</p>
 		<p>There are no projects to show at the moment. Check back later!</p>
 	</div> -->
 
-	<div class="divider my-0"></div>
-	{
-		page.data.map((project: any) => (
-			<>
-				<HorizontalCard project={project} target="_self" />
-				<div class="divider my-0" />
-			</>
-		))
-	}
+  <div class="divider my-0"></div>
+  {
+    page.data.map((project: Portfolio) => (
+      <>
+        <HorizontalCard
+          slug={project.slug}
+          project={project.data}
+          target="_self"
+        />
+        <div class="divider my-0" />
+      </>
+    ))
+  }
 
-	<div class="flex justify-between">
-		{
-			page.url.prev ? (
-				<a href={page.url.prev} class="btn btn-ghost my-10 mx-5">
-					{" "}
-					<svg
-						class="h-6 w-6 fill-current md:h-8 md:w-8"
-						xmlns="http://www.w3.org/2000/svg"
-						width="24"
-						height="24"
-						viewBox="0 0 24 24"
-					>
-						<path d="M15.41,16.58L10.83,12L15.41,7.41L14,6L8,12L14,18L15.41,16.58Z" />
-					</svg>{" "}
-					Recent projects
-				</a>
-			) : (
-				<div />
-			)
-		}
-		{
-			page.url.next ? (
-				<a href={page.url.next} class="btn btn-ghost my-10 mx-5">
-					Older Projects{" "}
-					<svg
-						class="h-6 w-6 fill-current md:h-8 md:w-8"
-						xmlns="http://www.w3.org/2000/svg"
-						width="24"
-						height="24"
-						viewBox="0 0 24 24"
-					>
-						{" "}
-						<path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" />
-					</svg>
-				</a>
-			) : (
-				<div />
-			)
-		}
-	</div>
+  <div class="flex justify-between">
+    {
+      page.url.prev ? (
+        <a href={page.url.prev} class="btn btn-ghost my-10 mx-5">
+          {" "}
+          <svg
+            class="h-6 w-6 fill-current md:h-8 md:w-8"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+          >
+            <path d="M15.41,16.58L10.83,12L15.41,7.41L14,6L8,12L14,18L15.41,16.58Z" />
+          </svg>{" "}
+          Recent projects
+        </a>
+      ) : (
+        <div />
+      )
+    }
+    {
+      page.url.next ? (
+        <a href={page.url.next} class="btn btn-ghost my-10 mx-5">
+          Older Projects{" "}
+          <svg
+            class="h-6 w-6 fill-current md:h-8 md:w-8"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+          >
+            {" "}
+            <path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" />
+          </svg>
+        </a>
+      ) : (
+        <div />
+      )
+    }
+  </div>
 </BaseLayout>

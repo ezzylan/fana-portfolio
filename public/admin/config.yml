@@ -1,20 +1,17 @@
 backend:
-    name: "git-gateway"
-    branch: "master"
+  name: "git-gateway"
+  branch: "master"
 media_folder: "src/assets"
 collections:
-    - name: "projects"
-      label: "Projects"
-      folder: "src/content/portfolio"
-      create: true
-      delete: true
-      fields:
-          - { name: "title", widget: "string", label: "Project Title" }
-          - {
-                name: "description",
-                widget: "text",
-                label: "Project Description",
-            }
-          - { name: "heroImage", widget: "image", label: "Project Image" }
-          - { name: "pubDate", widget: "datetime", label: "Publication Date" }
-          - { name: "body", widget: "markdown", label: "Project Body" }
+  - name: "projects"
+    label: "Projects"
+    folder: "src/content/portfolio"
+    create: true
+    delete: true
+    fields:
+      - { name: "title", widget: "string", label: "Project Title" }
+      - { name: "description", widget: "text", label: "Project Description" }
+      - { name: "heroImage", widget: "image", label: "Project Image" }
+      - { name: "pubDate", widget: "datetime", label: "Publication Date" }
+      - { name: "tools", widget: "list", label: "Tools Used" }
+      - { name: "body", widget: "markdown", label: "Project Body" }
