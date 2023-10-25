@@ -6,7 +6,7 @@ heroImage: /src/assets/screenshot-2023-09-18-090147.png
 pubDate: 2023-09-15
 tools:
   - Tableau
-  - Excel
+  - MS Excel
 ---
 
 ## **Purpose:**
