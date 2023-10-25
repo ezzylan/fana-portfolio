@@ -10,7 +10,7 @@ dependencies:
     version: 3.0.2
   '@astrojs/tailwind':
     specifier: ^5.0.2
-    version: 5.0.2(astro@3.3.4)(tailwindcss@3.3.3)
+    version: 5.0.2(astro@3.3.4)(tailwindcss@3.3.4)
   astro:
     specifier: ^3.3.4
     version: 3.3.4
@@ -21,13 +21,13 @@ dependencies:
     specifier: ^1.11.10
     version: 1.11.10
   tailwindcss:
-    specifier: ^3.3.3
-    version: 3.3.3
+    specifier: ^3.3.4
+    version: 3.3.4
 
 devDependencies:
   '@tailwindcss/typography':
     specifier: ^0.5.10
-    version: 0.5.10(tailwindcss@3.3.3)
+    version: 0.5.10(tailwindcss@3.3.4)
   prettier:
     specifier: ^3.0.3
     version: 3.0.3
@@ -102,7 +102,7 @@ packages:
       zod: 3.21.1
     dev: false
 
-  /@astrojs/tailwind@5.0.2(astro@3.3.4)(tailwindcss@3.3.3):
+  /@astrojs/tailwind@5.0.2(astro@3.3.4)(tailwindcss@3.3.4):
     resolution: {integrity: sha512-oXqeqmBlkQmsltrsU9nEWeXOtrZIAHW8dcmX7BCdrjzPnU6dPwWzAwhddNQ9ihKiWwsLnlbwQZIo2CDigcZlIA==}
     peerDependencies:
       astro: ^3.2.4
@@ -112,7 +112,7 @@ packages:
       autoprefixer: 10.4.16(postcss@8.4.31)
       postcss: 8.4.31
       postcss-load-config: 4.0.1(postcss@8.4.31)
-      tailwindcss: 3.3.3
+      tailwindcss: 3.3.4
     transitivePeerDependencies:
       - ts-node
     dev: false
@@ -798,7 +798,7 @@ packages:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.15.0
 
-  /@tailwindcss/typography@0.5.10(tailwindcss@3.3.3):
+  /@tailwindcss/typography@0.5.10(tailwindcss@3.3.4):
     resolution: {integrity: sha512-Pe8BuPJQJd3FfRnm6H0ulKIGoMEQS+Vq01R6M5aCrFB/ccR/shT+0kXLjouGC1gFLm9hopTFN+DMP0pfwRWzPw==}
     peerDependencies:
       tailwindcss: '>=3.0.0 || insiders'
@@ -807,7 +807,7 @@ packages:
       lodash.isplainobject: 4.0.6
       lodash.merge: 4.6.2
       postcss-selector-parser: 6.0.10
-      tailwindcss: 3.3.3
+      tailwindcss: 3.3.4
     dev: true
 
   /@types/babel__core@7.20.3:
@@ -1132,7 +1132,7 @@ packages:
     hasBin: true
     dependencies:
       caniuse-lite: 1.0.30001553
-      electron-to-chromium: 1.4.565
+      electron-to-chromium: 1.4.566
       node-releases: 2.0.13
       update-browserslist-db: 1.0.13(browserslist@4.22.1)
     dev: false
@@ -1344,7 +1344,7 @@ packages:
       css-selector-tokenizer: 0.8.0
       postcss: 8.4.31
       postcss-js: 4.0.1(postcss@8.4.31)
-      tailwindcss: 3.3.3
+      tailwindcss: 3.3.4
     transitivePeerDependencies:
       - ts-node
     dev: false
@@ -1455,8 +1455,8 @@ packages:
     resolution: {integrity: sha512-I88TYZWc9XiYHRQ4/3c5rjjfgkjhLyW2luGIheGERbNQ6OY7yTybanSpDXZa8y7VUP9YmDcYa+eyq4ca7iLqWA==}
     dev: false
 
-  /electron-to-chromium@1.4.565:
-    resolution: {integrity: sha512-XbMoT6yIvg2xzcbs5hCADi0dXBh4//En3oFXmtPX+jiyyiCTiM9DGFT2SLottjpEs9Z8Mh8SqahbR96MaHfuSg==}
+  /electron-to-chromium@1.4.566:
+    resolution: {integrity: sha512-mv+fAy27uOmTVlUULy15U3DVJ+jg+8iyKH1bpwboCRhtDC69GKf1PPTZvEIhCyDr81RFqfxZJYrbgp933a1vtg==}
     dev: false
 
   /emoji-regex@10.3.0:
@@ -3575,8 +3575,8 @@ packages:
     resolution: {integrity: sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==}
     engines: {node: '>= 0.4'}
 
-  /tailwindcss@3.3.3:
-    resolution: {integrity: sha512-A0KgSkef7eE4Mf+nKJ83i75TMyq8HqY3qmFIJSWy8bNt0v1lG7jUcpGpoTFxAwYcWOphcTBLPPJg+bDfhDf52w==}
+  /tailwindcss@3.3.4:
+    resolution: {integrity: sha512-JXZNOkggUAc9T5E7nCrimoXHcSf9h3NWFe5sh36CGD/3M5TRLuQeFnQoDsit2uVTqgoOZHLx5rTykLUu16vsMQ==}
     engines: {node: '>=14.0.0'}
     hasBin: true
     dependencies:
