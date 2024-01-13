@@ -1,6 +1,11 @@
 // Update experiences here
 export const allExp = [
 	{
+		title: "Data Analyst",
+		location: "Generali, Menara Goldhill, Kuala Lumpur, Malaysia",
+		date: "Jan 2024 - Current",
+	},
+	{
 		title: "Analyst Intern",
 		location: "KRU Studios, Cyberjaya, Selangor, Malaysia",
 		date: "Sep 2023 - Dec 2023",
@@ -64,10 +69,10 @@ export const allEdu = [
 export const allSkills = [
 	"SQL",
 	"Tableau",
+	"Power BI",
 	"Microsoft Excel",
 	"Microsoft Office",
 	"Data Analysis",
-	"Project Management",
 	"Google Office Suite",
 	"Canva",
 ];
