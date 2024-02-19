@@ -13,13 +13,13 @@
   "dependencies": {
     "@astrojs/sitemap": "^3.0.5",
     "@astrojs/tailwind": "^5.1.0",
-    "astro": "^4.3.5",
+    "astro": "^4.4.0",
     "dayjs": "^1.11.10",
     "tailwindcss": "^3.4.1"
   },
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.10",
-    "daisyui": "^4.6.2",
+    "daisyui": "^4.7.2",
     "prettier": "^3.2.5",
     "prettier-plugin-astro": "^0.12.3",
     "prettier-plugin-tailwindcss": "^0.5.11"
