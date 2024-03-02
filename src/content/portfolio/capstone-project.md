@@ -22,20 +22,20 @@ This individual project is a comprehensive analysis and visualization of global 
 
 The project provides a multifaceted analysis by visualizing key indicators of maternal and reproductive health on a global map. The indicators include the maternal mortality ratio, stillbirth rate, total adolescent birth rate, family planning satisfaction, and underage marriage rate. These visualizations enable viewers to gain insights into the geographic distribution and disparities in these critical health indicators.
 
-![](/src/assets/screenshot-2024-03-03-002006.png "Maternal mortality rate in all regions")
+![Maternal mortality rate in all regions](/src/assets/screenshot-2024-03-03-002006.png)
 
-![](/src/assets/screenshot-2024-03-03-001954.png "Total adolescent birth rate in all regions")
+![Total adolescent birth rate in all regions](/src/assets/screenshot-2024-03-03-001954.png)
 
 ## **Chart/Graph Types:**
 
 * For the first hypothesis, a density chart was utilized to illustrate the distribution of maternal mortality ratios, adolescent birth rates, and stillbirth rates across different regions, allowing for easy comparison.
 
-  ![](/src/assets/screenshot-2024-03-03-002053.png "GDP per capita VS maternal mortality ratio, adolescent birth rate, and stillbirth rate")
+  ![GDP per capita VS maternal mortality ratio, adolescent birth rate, and stillbirth rate](/src/assets/screenshot-2024-03-03-002053.png)
 * For the second and third hypotheses, scatter plots were employed to visualize the relationships between early marriage rates and adolescent birth rates, as well as between stillbirth rates and adolescent birth rates. These scatter plots provide a clear picture of potential correlations.
 
-  ![](/src/assets/screenshot-2024-03-03-002059.png "Relationship between early marriages and adolescent birth rate")
+  ![Relationship between early marriages and adolescent birth rate](/src/assets/screenshot-2024-03-03-002059.png)
 
-  ![](/src/assets/screenshot-2024-03-03-002106.png "Relationship between stillbirth rate and adolescent birth rate")
+  ![Relationship between stillbirth rate and adolescent birth rate](/src/assets/screenshot-2024-03-03-002106.png)
 
 ## **Conclusion:**
 
