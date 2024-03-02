@@ -8,7 +8,6 @@ tools:
   - Tableau
   - MS Excel
 ---
-
 ## **Purpose:**
 
 This individual project is a comprehensive analysis and visualization of global maternal and reproductive health data spanning from 2015 to 2020. Its primary objective is to shed light on the critical challenges and issues surrounding maternal and reproductive health worldwide. By doing so, we aim to raise public awareness, foster community engagement, and promote support for initiatives that improve the well-being of women and newborns.
@@ -23,14 +22,24 @@ This individual project is a comprehensive analysis and visualization of global 
 
 The project provides a multifaceted analysis by visualizing key indicators of maternal and reproductive health on a global map. The indicators include the maternal mortality ratio, stillbirth rate, total adolescent birth rate, family planning satisfaction, and underage marriage rate. These visualizations enable viewers to gain insights into the geographic distribution and disparities in these critical health indicators.
 
+![](/src/assets/screenshot-2024-03-03-002006.png "Maternal mortality rate in all regions")
+
+![](/src/assets/screenshot-2024-03-03-001954.png "Total adolescent birth rate in all regions")
+
 ## **Chart/Graph Types:**
 
-- For the first hypothesis, a density chart was utilized to illustrate the distribution of maternal mortality ratios, adolescent birth rates, and stillbirth rates across different regions, allowing for easy comparison.
-- For the second and third hypotheses, scatter plots were employed to visualize the relationships between early marriage rates and adolescent birth rates, as well as between stillbirth rates and adolescent birth rates. These scatter plots provide a clear picture of potential correlations.
+* For the first hypothesis, a density chart was utilized to illustrate the distribution of maternal mortality ratios, adolescent birth rates, and stillbirth rates across different regions, allowing for easy comparison.
+
+  ![](/src/assets/screenshot-2024-03-03-002053.png "GDP per capita VS maternal mortality ratio, adolescent birth rate, and stillbirth rate")
+* For the second and third hypotheses, scatter plots were employed to visualize the relationships between early marriage rates and adolescent birth rates, as well as between stillbirth rates and adolescent birth rates. These scatter plots provide a clear picture of potential correlations.
+
+  ![](/src/assets/screenshot-2024-03-03-002059.png "Relationship between early marriages and adolescent birth rate")
+
+  ![](/src/assets/screenshot-2024-03-03-002106.png "Relationship between stillbirth rate and adolescent birth rate")
 
 ## **Conclusion:**
 
-The project's findings have significant implications for global health and development. In line with the **_Sustainable Development Goals (SDG) Target 3_**, we found that **lower-income countries indeed face higher maternal mortality ratios, adolescent birth rates, and stillbirth rates**. These disparities underscore the urgent need for targeted interventions, healthcare infrastructure improvement, and equitable access to quality healthcare services in these regions.
+The project's findings have significant implications for global health and development. In line with the ***Sustainable Development Goals (SDG) Target 3***, we found that **lower-income countries indeed face higher maternal mortality ratios, adolescent birth rates, and stillbirth rates**. These disparities underscore the urgent need for targeted interventions, healthcare infrastructure improvement, and equitable access to quality healthcare services in these regions.
 
 Additionally, the project's analysis confirmed a **positive correlation between early marriages and higher adolescent birth rates**, as well as an **association between higher stillbirth rates and adolescent births**. These findings emphasize the importance of addressing sociocultural factors and promoting comprehensive sexual and reproductive health education to reduce adolescent pregnancies.
 
