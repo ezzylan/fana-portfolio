@@ -1,6 +1,6 @@
 ---
 import { type CollectionEntry, getCollection } from "astro:content";
-import ProjectLayout from "../../layouts/ProjectLayout.astro";
+import ProjectLayout from "@layouts/ProjectLayout.astro";
 
 export async function getStaticPaths() {
 	const portfolioEntries = await getCollection("portfolio");

@@ -14,6 +14,7 @@ const { slug, project, target = "_blank" } = Astro.props;
             src={project.heroImage}
             alt={project.title}
             class="max-w-full md:max-w-[13rem] rounded-lg border border-neutral"
+            loading="eager"
           />
         )
       }
