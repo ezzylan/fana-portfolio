@@ -24,7 +24,7 @@ The project provides a multifaceted analysis by visualizing key indicators of ma
 
 ![Maternal mortality rate in all regions](/src/assets/maternal-mortality-ratio.png)
 
-![Total adolescent birth rate in all regions](/images/screenshot-2024-03-03-001954.png)
+![Total adolescent birth rate in all regions](/src/assets/total-adolescent-birth-rate.png)
 
 ## **Chart/Graph Types:**
 
