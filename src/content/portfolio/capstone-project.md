@@ -24,20 +24,18 @@ The project provides a multifaceted analysis by visualizing key indicators of ma
 
 ![Maternal mortality rate in all regions](/src/assets/maternal-mortality-ratio.png)
 
-
-
 ![Total adolescent birth rate in all regions](/images/screenshot-2024-03-03-001954.png)
 
 ## **Chart/Graph Types:**
 
 * For the first hypothesis, a density chart was utilized to illustrate the distribution of maternal mortality ratios, adolescent birth rates, and stillbirth rates across different regions, allowing for easy comparison.
 
-  ![](/src/assets/screenshot-2024-03-03-002053.png)
+  ![](/src/assets/gdp-per-capita-vs-health-outcomes.png)
 * For the second and third hypotheses, scatter plots were employed to visualize the relationships between early marriage rates and adolescent birth rates, as well as between stillbirth rates and adolescent birth rates. These scatter plots provide a clear picture of potential correlations.
 
-  ![Relationship between early marriages and adolescent birth rate](/src/assets/screenshot-2024-03-03-002059.png)
+  ![Relationship between early marriages and adolescent birth rate](/src/assets/early-marriages-vs-adolescent-birth-rate.png)
 
-  ![Relationship between stillbirth rate and adolescent birth rate](/src/assets/screenshot-2024-03-03-002106.png)
+  ![Relationship between stillbirth rate and adolescent birth rate](/src/assets/stillbirth-rate-vs-adolescent-birth.png)
 
 ## **Conclusion:**
 
