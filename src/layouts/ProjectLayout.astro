@@ -6,7 +6,7 @@ import { Image } from "astro:assets";
 
 const { project } = Astro.props;
 dayjs.extend(localizedFormat);
-const displayDate = dayjs(project.data.pubDate).format("ll");
+// const displayDate = dayjs(project.data.pubDate).format("ll");
 ---
 
 <BaseLayout
