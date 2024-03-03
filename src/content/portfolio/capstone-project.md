@@ -22,7 +22,9 @@ This individual project is a comprehensive analysis and visualization of global 
 
 The project provides a multifaceted analysis by visualizing key indicators of maternal and reproductive health on a global map. The indicators include the maternal mortality ratio, stillbirth rate, total adolescent birth rate, family planning satisfaction, and underage marriage rate. These visualizations enable viewers to gain insights into the geographic distribution and disparities in these critical health indicators.
 
-![Maternal mortality rate in all regions](/src/assets/screenshot-2024-03-03-002006.png)
+![Maternal mortality rate in all regions](/src/assets/maternal-mortality-ratio.png)
+
+
 
 ![Total adolescent birth rate in all regions](/images/screenshot-2024-03-03-001954.png)
 
