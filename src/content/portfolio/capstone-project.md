@@ -2,7 +2,7 @@
 title: Global Maternal and Reproductive Health Analysis (2015 - 2020)
 description: Capstone Project for Data Analytics Bootcamp as part of the K Youth
   Development Programme
-heroImage: /images/screenshot-2023-09-18-090147.png
+heroImage: /src/assets/screenshot-2023-09-18-090147.png
 pubDate: 2023-09-15
 tools:
   - Tableau
