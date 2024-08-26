@@ -9,7 +9,7 @@ tools:
   - PowerBI
   - Excel
 ---
-<iframe title="Data Professional Dashboard" width="600" height="373.5" src="https://app.powerbi.com/view?r=eyJrIjoiMTU4MTkwMjUtZDNlMy00ODg5LThhMjctMmRmNzYwNzJiNjY4IiwidCI6ImE2M2JiMWE5LTQ4YzItNDQ4Yi04NjkzLTMzMTdiMDBjYTdmYiIsImMiOjEwfQ%3D%3D" frameborder="0" allowFullScreen="true"></iframe>
+<iframe title="Data Professional Dashboard" width="800" height="486" src="https://app.powerbi.com/view?r=eyJrIjoiMTU4MTkwMjUtZDNlMy00ODg5LThhMjctMmRmNzYwNzJiNjY4IiwidCI6ImE2M2JiMWE5LTQ4YzItNDQ4Yi04NjkzLTMzMTdiMDBjYTdmYiIsImMiOjEwfQ%3D%3D&pageName=7d3779a059d6e42050ee" frameborder="0" allowFullScreen="true"></iframe>
 
 ## **Objective:**
 
