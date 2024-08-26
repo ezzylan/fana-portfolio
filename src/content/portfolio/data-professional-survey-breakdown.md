@@ -9,7 +9,7 @@ tools:
   - PowerBI
   - Excel
 ---
-<iframe title="Data Professional Dashboard" width="1024" height="612" src="https://app.powerbi.com/view?r=eyJrIjoiMTU4MTkwMjUtZDNlMy00ODg5LThhMjctMmRmNzYwNzJiNjY4IiwidCI6ImE2M2JiMWE5LTQ4YzItNDQ4Yi04NjkzLTMzMTdiMDBjYTdmYiIsImMiOjEwfQ%3D%3D&pageName=7d3779a059d6e42050ee" frameborder="0" allowFullScreen="true"></iframe>
+<iframe title="Data Professional Dashboard" width="600" height="373.5" src="https://app.powerbi.com/view?r=eyJrIjoiMTU4MTkwMjUtZDNlMy00ODg5LThhMjctMmRmNzYwNzJiNjY4IiwidCI6ImE2M2JiMWE5LTQ4YzItNDQ4Yi04NjkzLTMzMTdiMDBjYTdmYiIsImMiOjEwfQ%3D%3D" frameborder="0" allowFullScreen="true"></iframe>
 
 ## **Objective:**
 
@@ -44,3 +44,7 @@ Creating this dashboard helped in refining skills in Power BI, particularly in h
 ## **Conclusion:**
 
 This project provided a deeper understanding of the data industry and its professionals. The insights gained from the analysis are valuable for anyone looking to enter or progress within the data field, offering a clear picture of the current landscape and future trends.
+
+## **Link to the Power BI Dashboard:**
+
+https://rb.gy/14xlp7
