@@ -4,33 +4,44 @@ const { slug, project, target = "_blank" } = Astro.props;
 ---
 
 <div
-  class="rounded-lg bg-base-100 hover:shadow-xl transition ease-in-out hover:scale-[102%]"
+	class="rounded-lg bg-base-100 hover:shadow-xl transition ease-in-out hover:scale-[102%]"
 >
-  <a href={`/portfolio/${slug}`} target={target}>
-    <div class="hero-content flex-col md:flex-row">
-      {
-        project.heroImage && (
-          <Image
-            src={project.heroImage}
-            alt={project.title}
-            class="max-w-full md:max-w-[13rem] rounded-lg border border-neutral"
-            loading="eager"
-          />
-        )
-      }
-      <div class="grow w-full">
-        <h1 class="text-xl font-bold">
-          {project.title}
-          {
-            project.tools.map((tool: string) => (
-              <div class="badge badge-secondary mx-2">{tool}</div>
-            ))
-          }
-        </h1>
-        <p class="py-1 text-sm italic text-slate-400">
-          {project.description}
-        </p>
-      </div>
-    </div>
-  </a>
+	<a href={`/portfolio/${slug}`} target={target}>
+		<div class="hero-content flex-col md:flex-row">
+			{
+				project.heroImage && (
+					<Image
+						src={project.heroImage}
+						alt={project.title}
+						class="max-w-full md:max-w-[13rem] rounded-lg border border-neutral"
+						loading="eager"
+						transition:name={`${project.title}Image`}
+					/>
+				)
+			}
+			<div class="grow w-full">
+				<div class="flex items-center justify-between">
+					<h1
+						class="text-xl font-bold"
+						transition:name={project.title}
+					>
+						{project.title}
+					</h1>
+					<div
+						class="space-x-2"
+						transition:name={`${project.title}Badges`}
+					>
+						{
+							project.tools.map((tool: string) => (
+								<div class="badge badge-secondary">{tool}</div>
+							))
+						}
+					</div>
+				</div>
+				<p class="py-1 text-sm italic text-slate-400">
+					{project.description}
+				</p>
+			</div>
+		</div>
+	</a>
 </div>

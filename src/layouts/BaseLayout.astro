@@ -7,44 +7,48 @@ import SideBar from "@components/SideBar.astro";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../config";
 
 const {
-  image,
-  title = SITE_TITLE,
-  description = SITE_DESCRIPTION,
-  includeSidebar = true,
-  sideBarActiveItemID,
+	image,
+	title = SITE_TITLE,
+	description = SITE_DESCRIPTION,
+	includeSidebar = true,
+	sideBarActiveItemID,
 } = Astro.props;
 ---
 
 <!doctype html>
-<html lang="en" data-theme="mytheme1">
-  <head>
-    <BaseHead title={title} description={description} image={image} />
-    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"
-    ></script>
-  </head>
+<html lang="en" data-theme="lemonade">
+	<head>
+		<BaseHead title={title} description={description} image={image} />
+		<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"
+		></script>
+	</head>
 
-  <body class="bg-base-100 drawer">
-    <input id="my-drawer" type="checkbox" class="drawer-toggle" />
-    <div class="drawer-content">
-      <Header title={SITE_TITLE} />
-      <div class="md:flex md:justify-center">
-        <main class="pt-6 p-10 lg:max-w-[900px] max-w-[100vw]">
-          <slot />
-        </main>
-      </div>
-      <Footer />
-    </div>
-    {includeSidebar && <SideBar sideBarActiveItemID={sideBarActiveItemID} />}
-    <script>
-      if (window.netlifyIdentity) {
-        window.netlifyIdentity.on("init", (user) => {
-          if (!user) {
-            window.netlifyIdentity.on("login", () => {
-              document.location.href = "/admin/";
-            });
-          }
-        });
-      }
-    </script>
-  </body>
+	<body class="bg-base-100 drawer">
+		<input id="my-drawer" type="checkbox" class="drawer-toggle" />
+		<div class="drawer-content">
+			<Header title={SITE_TITLE} />
+			<div class="md:flex md:justify-center">
+				<main class="pt-6 p-10 lg:max-w-[900px] max-w-[100vw]">
+					<slot />
+				</main>
+			</div>
+			<Footer />
+		</div>
+		{
+			includeSidebar && (
+				<SideBar sideBarActiveItemID={sideBarActiveItemID} />
+			)
+		}
+		<script>
+			if (window.netlifyIdentity) {
+				window.netlifyIdentity.on("init", (user) => {
+					if (!user) {
+						window.netlifyIdentity.on("login", () => {
+							document.location.href = "/admin/";
+						});
+					}
+				});
+			}
+		</script>
+	</body>
 </html>

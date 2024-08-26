@@ -10,30 +10,41 @@ dayjs.extend(localizedFormat);
 ---
 
 <BaseLayout
-  title={`${project.data.title} - Farhanah Izzati`}
-  description={project.data.description}
-  image={project.data.heroImage}
+	title={`${project.data.title} - Farhanah Izzati`}
+	description={project.data.description}
+	image={project.data.heroImage}
 >
-  <main class="md:flex md:justify-center">
-    <article class="prose prose-lg max-w-[750px] prose-img:mx-auto">
-      {
-        project.data.heroImage && (
-          <Image
-            src={project.data.heroImage}
-            alt={project.data.title}
-            class="w-full mb-6 rounded-lg border border-neutral"
-            loading="eager"
-          />
-        )
-      }
-      <h1 class="title my-2 text-4xl font-bold">{project.data.title}</h1>
-      {
-        project.data.tools.map((tool: string) => (
-          <div class="badge badge-secondary me-2">{tool}</div>
-        ))
-      }
-      <div class="divider my-2"></div>
-      <slot />
-    </article>
-  </main>
+	<main class="md:flex md:justify-center">
+		<article class="prose prose-lg max-w-[750px] prose-img:mx-auto">
+			{
+				project.data.heroImage && (
+					<Image
+						src={project.data.heroImage}
+						alt={project.data.title}
+						class="w-full mb-6 rounded-lg border border-neutral"
+						loading="eager"
+						transition:name={`${project.data.title}Image`}
+					/>
+				)
+			}
+			<h1
+				class="title my-2 text-4xl font-bold"
+				transition:name={project.data.title}
+			>
+				{project.data.title}
+			</h1>
+			<div
+				class="space-x-2"
+				transition:name={`${project.data.title}Badges`}
+			>
+				{
+					project.data.tools.map((tool: string) => (
+						<div class="badge badge-secondary">{tool}</div>
+					))
+				}
+			</div>
+			<div class="divider my-2"></div>
+			<slot />
+		</article>
+	</main>
 </BaseLayout>
