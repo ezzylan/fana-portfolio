@@ -3,7 +3,7 @@ title: Data Professional Survey Breakdown
 description: Interactive Power BI dashboard created as part of the Data Analyst
   BootCamp following Alex The Analyst’s YouTube series, focusing on key industry
   insights for data professionals.
-heroImage: ../../assets/data-professional-dashboard_page-0001.jpg
+heroImage: ../../assets/cover-image.png
 pubDate: 2024-08-26T20:00:00.000Z
 tools:
   - PowerBI
