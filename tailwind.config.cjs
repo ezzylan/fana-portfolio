@@ -5,22 +5,22 @@ module.exports = {
   plugins: [require("@tailwindcss/typography"), require("daisyui")],
   daisyui: {
     themes: [
-      // "dark",
+      "dark",
       //"lemonade",
       // "pastel",
       // "dracula",
-      {
-        mytheme1: {
-          primary: "#f43f5e",
-          secondary: "#fb7185",
-          accent: "#06b6d4",
-          neutral: "#2a323c",
-          "base-100": "#ffe4e6",
-          info: "#0e7490",
-          success: "#047857",
-          warning: "#fbbd23",
-          error: "#b91c1c",
-        },
+      // {
+      //   mytheme1: {
+      //     primary: "#f43f5e",
+      //     secondary: "#fb7185",
+      //     accent: "#06b6d4",
+      //     neutral: "#2a323c",
+      //     "base-100": "#ffe4e6",
+      //     info: "#0e7490",
+      //     success: "#047857",
+      //     warning: "#fbbd23",
+      //     error: "#b91c1c",
+      //   },
       //   mytheme2: {
       //     primary: "#50b9c9",
       //     secondary: "#e59eed",
@@ -32,7 +32,7 @@ module.exports = {
       //     warning: "#ca880c",
       //     error: "#e1567d",
       //   },
-      },
+      // },
     ],
     logs: false,
   },
