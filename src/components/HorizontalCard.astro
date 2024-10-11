@@ -34,17 +34,22 @@ const { slug, project, target = "_blank" } = Astro.props;
 					>
 						{
 							project.tools.map((tool: string) => {
-								const badgeColor =
-									tool === "PowerBI"
-										? "warning"
-										: tool === "Tableau"
-											? "info"
-											: tool === "Excel"
-												? "success"
-												: "secondary";
+								// const toolName = tool.trim();
+
+								// const badgeColor =
+								// 	toolName === "PowerBI"
+								// 		? "warning"
+								// 		: toolName === "Tableau"
+								// 			? "info"
+								// 			: toolName === "Excel"
+								// 				? "success"
+								// 				: "secondary";
 
 								return (
-									<div class={`badge badge-${badgeColor}`}>
+									// <div class={`badge badge-${badgeColor}`}>
+									// 	{toolName}
+									// </div>
+									<div class="badge badge-secondary">
 										{tool}
 									</div>
 								);
@@ -59,3 +64,22 @@ const { slug, project, target = "_blank" } = Astro.props;
 		</div>
 	</a>
 </div>
+
+<!-- <script>
+	const badges = document.querySelectorAll(".badge");
+
+	badges.forEach((badge) => {
+		const tool = badge.innerHTML.trim();
+
+		const badgeColor =
+			tool === "PowerBI"
+				? "warning"
+				: tool === "Tableau"
+					? "info"
+					: tool === "Excel"
+						? "success"
+						: "secondary";
+
+		badge.classList.add(`badge-${badgeColor}`);
+	});
+</script> -->

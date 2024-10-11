@@ -1,8 +1,8 @@
 {
   "name": "fana-portfolio",
-  "description": "fana-portfolio is a Personal Portfolio Website made for Farhanah Izzati using the Astrofy template by Manuel Ernesto.",
+  "description": "A personal portfolio website made for Farhanah Izzati using the Astrofy template by Manuel Ernesto.",
   "type": "module",
-  "version": "2.5.1",
+  "version": "1.1.0",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",

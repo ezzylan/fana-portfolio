@@ -39,19 +39,22 @@ dayjs.extend(localizedFormat);
 			>
 				{
 					project.data.tools.map((tool: string) => {
-						const badgeColor =
-							tool === "PowerBI"
-								? "warning"
-								: tool === "Tableau"
-									? "info"
-									: tool === "Excel"
-										? "success"
-										: "secondary";
+						// const toolName = tool.trim();
+
+						// const badgeColor =
+						// 	toolName === "PowerBI"
+						// 		? "warning"
+						// 		: toolName === "Tableau"
+						// 			? "info"
+						// 			: toolName === "Excel"
+						// 				? "success"
+						// 				: "secondary";
 
 						return (
-							<div class={`badge badge-${badgeColor}`}>
-								{tool}
-							</div>
+							// <div class={`badge badge-${badgeColor}`}>
+							// 	{toolName}
+							// </div>
+							<div class="badge badge-secondary">{tool}</div>
 						);
 					})
 				}
