@@ -21,14 +21,14 @@ dayjs.extend(localizedFormat);
 					<Image
 						src={project.data.heroImage}
 						alt={project.data.title}
-						class="w-full mb-6 rounded-lg border border-neutral"
+						class="w-full mb-6 border rounded-lg border-neutral"
 						loading="eager"
 						transition:name={`${project.data.title}Image`}
 					/>
 				)
 			}
 			<h1
-				class="title my-2 text-4xl font-bold"
+				class="my-2 text-4xl font-bold title"
 				transition:name={project.data.title}
 			>
 				{project.data.title}
@@ -38,12 +38,25 @@ dayjs.extend(localizedFormat);
 				transition:name={`${project.data.title}Badges`}
 			>
 				{
-					project.data.tools.map((tool: string) => (
-						<div class="badge badge-secondary">{tool}</div>
-					))
+					project.data.tools.map((tool: string) => {
+						const badgeColor =
+							tool === "PowerBI"
+								? "warning"
+								: tool === "Tableau"
+									? "info"
+									: tool === "Excel"
+										? "success"
+										: "secondary";
+
+						return (
+							<div class={`badge badge-${badgeColor}`}>
+								{tool}
+							</div>
+						);
+					})
 				}
 			</div>
-			<div class="divider my-2"></div>
+			<div class="my-2 divider"></div>
 			<slot />
 		</article>
 	</main>

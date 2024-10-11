@@ -1,5 +1,6 @@
 ---
 import { Image } from "astro:assets";
+
 const { slug, project, target = "_blank" } = Astro.props;
 ---
 
@@ -7,7 +8,7 @@ const { slug, project, target = "_blank" } = Astro.props;
 	class="rounded-lg bg-base-100 hover:shadow-xl transition ease-in-out hover:scale-[102%]"
 >
 	<a href={`/portfolio/${slug}`} target={target}>
-		<div class="hero-content flex-col md:flex-row">
+		<div class="flex-col hero-content md:flex-row">
 			{
 				project.heroImage && (
 					<Image
@@ -19,7 +20,7 @@ const { slug, project, target = "_blank" } = Astro.props;
 					/>
 				)
 			}
-			<div class="grow w-full">
+			<div class="w-full grow">
 				<div class="flex items-center justify-between">
 					<h1
 						class="text-xl font-bold"
@@ -32,9 +33,22 @@ const { slug, project, target = "_blank" } = Astro.props;
 						transition:name={`${project.title}Badges`}
 					>
 						{
-							project.tools.map((tool: string) => (
-								<div class="badge badge-secondary">{tool}</div>
-							))
+							project.tools.map((tool: string) => {
+								const badgeColor =
+									tool === "PowerBI"
+										? "warning"
+										: tool === "Tableau"
+											? "info"
+											: tool === "Excel"
+												? "success"
+												: "secondary";
+
+								return (
+									<div class={`badge badge-${badgeColor}`}>
+										{tool}
+									</div>
+								);
+							})
 						}
 					</div>
 				</div>

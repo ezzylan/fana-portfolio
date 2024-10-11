@@ -5,8 +5,8 @@ import { allExp, allEdu, allSkills, allAchv } from "./cvDetails";
 ---
 
 <BaseLayout title="CV - Farhanah Izzati" sideBarActiveItemID="cv">
-	<div class="mb-5 text-3xl w-full font-bold">Experience</div>
-	<div class="time-line-container grid gap-4 mb-10">
+	<div class="w-full mb-5 text-3xl font-bold">Experience</div>
+	<div class="grid gap-4 mb-10 time-line-container">
 		{
 			allExp.map((exp) => (
 				<TimeLineElement
@@ -18,8 +18,8 @@ import { allExp, allEdu, allSkills, allAchv } from "./cvDetails";
 		}
 	</div>
 
-	<div class="mb-5 text-3xl w-full font-bold">Education</div>
-	<div class="time-line-container grid gap-4 mb-10">
+	<div class="w-full mb-5 text-3xl font-bold">Education</div>
+	<div class="grid gap-4 mb-10 time-line-container">
 		{
 			allEdu.map((edu) => (
 				<TimeLineElement
@@ -31,18 +31,18 @@ import { allExp, allEdu, allSkills, allAchv } from "./cvDetails";
 		}
 	</div>
 
-	<div class="mb-5 text-3xl w-full font-bold">Skills</div>
-	<ul class="list-disc mb-10 flex flex-wrap gap-3">
-		{allSkills.map((skill) => <li class="btn">{skill}</li>)}
+	<div class="w-full mb-5 text-3xl font-bold">Skills</div>
+	<ul class="flex flex-wrap gap-3 mb-10 list-disc">
+		{allSkills.map((skill) => <li class="btn border-primary">{skill}</li>)}
 	</ul>
 
-	<div class="mb-5 text-3xl w-full font-bold">Achievements</div>
-	<ul class="list-disc mx-6 grid gap-2">
+	<div class="w-full mb-5 text-3xl font-bold">Achievements</div>
+	<ul class="grid gap-2 mx-6 list-disc">
 		{
 			allAchv.map((achv) => (
 				<li>
 					{achv.title}
-					<p class="font-light text-sm italic text-neutral-400">
+					<p class="text-sm italic font-light text-neutral-400">
 						{achv.date}
 					</p>
 				</li>

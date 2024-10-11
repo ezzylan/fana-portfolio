@@ -1,12 +1,13 @@
 ---
-import Icon from "./Icon.astro";
+import { Icon } from "astro-icon/components";
+
 const { icon, trait, description } = Astro.props;
 ---
 
 <div
-  class="border border-solid border-neutral rounded-xl p-6 flex flex-col gap-2 lg:gap-4"
+	class="border border-solid border-neutral rounded-xl p-6 flex flex-col gap-2 lg:gap-4 transition duration-300 hover:border-secondary hover:shadow-[0_0_10px_0_rgba(145,158,171,0.4)]"
 >
-  <Icon icon={icon} color="hsl(var(--p))" size="2.5rem" />
-  <h2 class="text-3xl font-bold">{trait}</h2>
-  <p class="text-gray-500">{description}</p>
+	<Icon name={icon} size="2.5rem" />
+	<h2 class="text-3xl font-bold">{trait}</h2>
+	<p class="text-gray-500">{description}</p>
 </div>

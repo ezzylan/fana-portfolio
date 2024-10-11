@@ -8,80 +8,80 @@ import profilePicture from "@assets/profile.jpg";
 import { aboutMe } from "./aboutMeDetails";
 
 const projects = (await getCollection("portfolio")).sort(
-  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
+	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
 );
 const latestProjects = projects.slice(0, 3);
 ---
 
 <BaseLayout sideBarActiveItemID="home">
-  <section class="pb-10 pt-5">
-    <div class="flex flex-col gap-8 md:grid grid-cols-10 md:gap-14">
-      <div class="col-span-6">
-        <div class="text-xl py-1">Hey there 👋</div>
-        <div class="text-5xl font-bold">I'm Farhanah Izzati</div>
-        <div class="text-2xl py-3">
-          Data Analyst currently based in Kuala Lumpur, Malaysia
-        </div>
-        <div class="flex flex-wrap gap-2 mt-3">
-          <a
-            class="btn"
-            href="mailto:farhanahizzati61@gmail.com"
-            target="_blank"
-          >
-            Let's connect!</a
-          >
-          <a
-            href="https://docs.google.com/document/d/1Gm4MhijSjbgPtRw1ga3xEp4DpJ9oF9LH/edit?usp=sharing&ouid=109877082331964277921&rtpof=true&sd=true"
-            target="_blank"
-            class="btn btn-outline"
-          >
-            Here's my CV
-          </a>
-        </div>
-      </div>
-      <Image
-        src={profilePicture}
-        alt="Farhanah Izzati"
-        class="object-cover aspect-[5/4] md:aspect-[3/4] rounded-3xl shadow-md shadow-zinc-400 col-span-4"
-        loading="eager"
-      />
-    </div>
-  </section>
+	<section class="pt-5 pb-10">
+		<div class="flex flex-col grid-cols-10 gap-8 md:grid md:gap-14">
+			<div class="col-span-6">
+				<div class="py-1 text-xl">Hey there 👋</div>
+				<div class="text-5xl font-bold">I'm Farhanah Izzati</div>
+				<div class="py-3 text-2xl">
+					Data Analyst currently based in Kuala Lumpur, Malaysia
+				</div>
+				<div class="flex flex-wrap gap-2 mt-3">
+					<a
+						class="btn border-primary"
+						href="mailto:farhanahizzati61@gmail.com"
+						target="_blank"
+					>
+						Let's connect!</a
+					>
+					<a
+						href="https://docs.google.com/document/d/1Gm4MhijSjbgPtRw1ga3xEp4DpJ9oF9LH/edit?usp=sharing&ouid=109877082331964277921&rtpof=true&sd=true"
+						target="_blank"
+						class="btn btn-outline"
+					>
+						Here's my CV
+					</a>
+				</div>
+			</div>
+			<Image
+				src={profilePicture}
+				alt="Farhanah Izzati"
+				class="object-cover aspect-[5/4] md:aspect-[3/4] rounded-3xl shadow-md shadow-zinc-400 col-span-4"
+				loading="eager"
+			/>
+		</div>
+	</section>
 
-  <section class="py-5">
-    <div class="mb-5 text-3xl w-full font-bold">About Me</div>
-    <div class="flex flex-col md:grid md:grid-cols-3 gap-6">
-      {
-        aboutMe.map((about) => (
-          <AboutMeCard
-            icon={about.icon}
-            trait={about.trait}
-            description={about.description}
-          />
-        ))
-      }
-    </div>
-  </section>
+	<section class="py-5">
+		<div class="w-full mb-5 text-3xl font-bold">About Me</div>
+		<div class="flex flex-col gap-6 md:grid md:grid-cols-3">
+			{
+				aboutMe.map((about) => (
+					<AboutMeCard
+						icon={about.icon}
+						trait={about.trait}
+						description={about.description}
+					/>
+				))
+			}
+		</div>
+	</section>
 
-  <section class="pt-5">
-    <div class="text-3xl w-full font-bold mb-5">My Latest Projects</div>
-    <!-- <div class="bg-base-200 border-l-4 border-secondary w-full p-4 min-w-full">
+	<section class="pt-5">
+		<div class="w-full mb-5 text-3xl font-bold">My Latest Projects</div>
+		<!-- <div class="w-full min-w-full p-4 border-l-4 bg-base-200 border-secondary">
 		<p class="font-bold">Sorry!</p>
 		<p>There are no projects to show at the moment. Check back later!</p>
 	</div> -->
 
-    <div class="divider my-0"></div>
-    {
-      latestProjects.map((project) => (
-        <>
-          <HorizontalCard
-            slug={project.slug}
-            project={project.data}
-            target="_self"
-          />
-          <div class="divider my-0" />
-        </>
-      ))
-    }
-  </section>
+		<div class="my-0 divider"></div>
+		{
+			latestProjects.map((project) => (
+				<>
+					<HorizontalCard
+						slug={project.slug}
+						project={project.data}
+						target="_self"
+					/>
+					<div class="my-0 divider" />
+				</>
+			))
+		}
+	</section>
 </BaseLayout>
